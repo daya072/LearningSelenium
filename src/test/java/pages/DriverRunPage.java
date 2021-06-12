@@ -34,6 +34,7 @@ public class DriverRunPage extends BasePage {
 	}
 
 	public void launchHerokuAppUrl() {
+		System.out.println("this is driver init"+driverInit.getDriver());
 		driverInit.getDriver().get("https://testpages.herokuapp.com/styled/index.html");
 	}
 
