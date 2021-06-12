@@ -9,7 +9,8 @@ Scenario Outline: Test launch of driver
 	|selenium|
 	|java|
 	|cucumber|
-	
+
+@uat	
 Scenario: Test launch of heroku app
 	Given I launch the herokuapp url
 	And I click on Alerts java script link

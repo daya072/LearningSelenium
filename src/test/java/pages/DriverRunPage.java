@@ -3,8 +3,8 @@ package pages;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 
-import com.selenium.base.BasePage;
-import com.selenium.driver.DriverInit;
+import com.sssan.base.BasePage;
+import com.sssan.driver.DriverInit;
 
 public class DriverRunPage extends BasePage {
 
@@ -17,6 +17,7 @@ public class DriverRunPage extends BasePage {
 	@FindBy(id = "alertexamples")
 	WebElement alertExamplesBox;
 
+	protected String abc;
 	DriverInit driverInit;
 
 	public DriverRunPage(DriverInit driverInit) {

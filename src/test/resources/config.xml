@@ -11,11 +11,11 @@
     </classes>
   </test>
  
-  <!-- <test name="Selenium IE Browser">
+  <test name="Selenium IE Browser">
     <parameter name="browser" value="IE" />
     <classes>
       <class name="com.selenium.runner.Runner" />
     </classes>
-  </test> -->
+  </test>
 </suite>
 

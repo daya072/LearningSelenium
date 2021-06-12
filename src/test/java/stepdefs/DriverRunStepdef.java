@@ -1,6 +1,6 @@
 package stepdefs;
 
-import com.selenium.driver.DriverInit;
+import com.sssan.driver.DriverInit;
 
 import io.cucumber.java.en.And;
 import io.cucumber.java.en.Given;
