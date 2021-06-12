@@ -12,7 +12,7 @@ import com.sssan.utils.PropertiesUtil;
 import io.cucumber.testng.AbstractTestNGCucumberTests;
 import io.cucumber.testng.CucumberOptions;
 
-@CucumberOptions(glue = { "com.selenium.runner", "stepdefs" }, features = { "src/test/java/features" })
+@CucumberOptions(glue = { "com.sssan.runner", "stepdefs" }, features = { "src/test/java/features" })
 
 public class Runner extends AbstractTestNGCucumberTests {
 
