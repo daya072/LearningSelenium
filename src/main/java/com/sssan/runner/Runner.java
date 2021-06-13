@@ -23,9 +23,8 @@ public class Runner extends AbstractTestNGCucumberTests {
 	}
 
 	@BeforeSuite
-	public void beforeSuite() throws CustomException {
-		PropertiesUtil prop = new PropertiesUtil();
-		prop.loadProperties();
+	public synchronized void  beforeSuite() throws CustomException{
+		PropertiesUtil.loadProperties();
 		System.setProperty("cucumber.filter.tags", "@uat");
 	}
 
