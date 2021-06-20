@@ -1,9 +1,11 @@
+@uat
 Feature: Test Run
 
 Scenario Outline: Test launch of driver
 	Given I launch the url
 	Then I search for the text "<searchText>"
-
+	
+	@uat
 	Examples:
 	|searchText|
 	|selenium|
