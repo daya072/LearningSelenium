@@ -12,7 +12,14 @@ import com.sssan.utils.PropertiesUtil;
 import io.cucumber.testng.AbstractTestNGCucumberTests;
 import io.cucumber.testng.CucumberOptions;
 
-@CucumberOptions(glue = { "com.sssan.runner", "stepdefs" }, features = { "src/test/java/features" })
+@CucumberOptions(
+			glue = { "com.sssan.runner", "stepdefs" },
+			features = { "src/test/java/features" },
+			plugin = {
+					"html:target/cucumber.html",
+					"com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter:"
+				}
+			)
 
 public class Runner extends AbstractTestNGCucumberTests {
 

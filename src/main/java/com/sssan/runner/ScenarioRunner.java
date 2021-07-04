@@ -1,5 +1,8 @@
 package com.sssan.runner;
 
+import com.aventstack.extentreports.ExtentReports;
+import com.aventstack.extentreports.ExtentTest;
+import com.aventstack.extentreports.Status;
 import org.openqa.selenium.WebDriver;
 import org.testng.Reporter;
 
@@ -11,7 +14,7 @@ import io.cucumber.java.Scenario;
 
 import com.sssan.driver.DriverInit;
 import com.sssan.driver.WebdriverManager;
-import com.sssan.enums.BrowserType;;
+import com.sssan.enums.BrowserType;
 
 public class ScenarioRunner{
 	
@@ -52,6 +55,5 @@ public class ScenarioRunner{
 	public void after(Scenario scenario) {
 		driver.quit();
 	}
-	
-	
+
 }

@@ -21,7 +21,7 @@ public class ManageIEDriver implements ISeleniumDriver {
 
 	@Override
 	public void setUpDriver() {
-		WebDriverManager.chromedriver().setup();
+		WebDriverManager.iedriver().setup();
 
 	}
 
